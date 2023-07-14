@@ -18,6 +18,10 @@ Key Features
 
 Users can enter their own Succession question in the provided text input or select from a selection of demo questions
 
+![alt text](https://github.com/julesvdata/succession_chat/blob/main/demo_images/home.png?raw=true)
+
 # Chat Page
 
 Chat interface for users to ask questions; featuring clickable example questions and gradually typed responses from the AI assistant
+
+![alt text](https://github.com/julesvdata/succession_chat/blob/main/demo_images/chat.png?raw=true)
