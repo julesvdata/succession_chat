@@ -2,7 +2,7 @@
 
 A Demo Flask Web App utilising OpenAI's GPT-4 for a chat expert on HBO's Succesion
 
-Accessible on Replit here: successionchat.julesvdata.repl.co
+Accessible on Replit here: successionchat--julesvdata.repl.co
 
 Key Features
 
