@@ -7,7 +7,7 @@ $(document).ready(function(){
         });
     });
 
-    const chatInput = document.getElementById("chat-input");
+    const chatInput = document.getElementById("index-chat-input");
 
     chatInput.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
