@@ -1,0 +1,5 @@
+venv/
+*.ipynb
+*.yaml
+*.pyc
+data/

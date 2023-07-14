@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Succesion Chat</title>
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Chat Functions -->
+  <script type="text/javascript" src="{{url_for('static', filename='js/chat.js')}}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+  <!-- Sidenav -->
+  <ul id="slide-out" class="sidenav sidenav-fixed" style="width:250px;">
+    <li>
+      <div class="chip" onclick="chipClicked(this)">
+        <span>What companies has Waystar acquired?</span>
+      </div>
+    </li>
+    <li>
+      <div class="chip" onclick="chipClicked(this)">
+        <span>What are the names of Logan Roy's children?</span>
+      </div>
+    </li>
+    <li>
+      <div class="chip" onclick="chipClicked(this)">
+        <span>Tell me an interesting production fact</span>
+      </div>
+    </li>
+    <li>
+      <div class="chip" onclick="chipClicked(this)">
+        <span>Summarise Season 2, Epsiode 1</span>
+      </div>
+    </li>
+    <li>
+      <div class="chip" onclick="chipClicked(this)">
+        <span>How old is Connor Roy?</span>
+      </div>
+    </li>
+        <li>
+      <div class="chip" onclick="chipClicked(this)">
+        <span>Who wrote Season 3, Epsiode 1?</span>
+      </div>
+    </li>
+  </ul>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-wrapper" style="background-color: black;">
+      <a href="#" class="brand-logo">Succession Chat</a>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+<main>
+  <div class="chat_container">
+    <div class="chat-window" id="messages-div">
+      <!-- Add your chat messages here -->
+    </div>
+  </div>
+</main>
+
+<!-- Fixed input field -->
+<div class="fixed-input">
+  <div class="container" style="width:100%">
+    <div class="row" style="margin-bottom: 0px;">
+      <div class="input-field col s10">
+        <input id="chat-input" type="text" style="height:20px;" class="input-text" placeholder="Type your question here...">
+      </div>
+      <div class="col s2">
+        <button id="send-message" class="chat-button" style="margin-top:15px; height:45px;">Chat</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

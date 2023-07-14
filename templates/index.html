@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- Materialize JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Index Functions -->
+    <script type="text/javascript" src="{{url_for('static', filename='js/index.js')}}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Succession Chat</title>
+    <style>
+        
+        .input-group {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .input-text {
+            flex-grow: 1;
+            padding: 12px 16px !important;
+            border: none !important;
+            border-top-left-radius: 25px !important;
+            border-bottom-left-radius: 25px !important;
+            background-color: #ffffff !important;
+            outline: none !important;
+            font-size: 16px !important;
+            color: #333 !important;
+            margin-right: -1px;
+            margin-bottom: 0px !important;
+        }
+
+        .chat-button {
+            padding: 12px 20px !important;
+            border: none !important;
+            border-top-right-radius: 25px !important;
+            border-bottom-right-radius: 25px !important;
+            background-color: #3498db !important;
+            color: #ffffff !important;
+            font-size: 16px !important;
+            cursor: pointer !important;
+            transition: 0.3s !important;
+            height: 69px !important;
+        }
+
+
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="container" style="width: 90%">
+        <div class="title">Succession Chat</div>
+        <div class="subtitle">Your AI guide to all things Succession</div>
+       <div class="index-input-group" style="margin-top:20px">
+            <input id="index-chat-input" type="text" class="input-text" placeholder="Type your question here...">
+            <button class="index-chat-button" onclick="submit_question()">Chat</button>
+        </div>
+      <div class="row" style="margin-top:50px;">
+        <div class="chips">
+              <div class="chip black-text" style="background-color: white;">What companies has Waystar acquired?</div>
+              <div class="chip black-text" style="background-color: white">What are the names of Logan Roy's children?</div>
+              <div class="chip black-text" style="background-color: white">Tell me an interesting production fact</div>
+              <div class="chip black-text" style="background-color: white">Summarise Season 2, Epsiode 1</div>
+              <div class="chip black-text" style="background-color: white">How old is Connor Roy?</div>
+              <div class="chip black-text" style="background-color: white;">Who wrote Season 3, Epsiode 1?</div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
